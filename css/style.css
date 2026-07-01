@@ -64,7 +64,7 @@
 .btn-sm-square,
 .btn-lg-square {
     padding: 0;
-    display: flex;
+    display: none !important;
     align-items: center;
     justify-content: center;
     font-weight: normal;
