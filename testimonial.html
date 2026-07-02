@@ -15,6 +15,24 @@
 </script>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Book AC Repair Nallasopara, Fridge Service Booking Vasai, Appliance Repair Appointment Virar, Local AC Technician Booking, Washing Machine Repair Online" name="keywords">
+	<!-- Event snippet for Click to call (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17590964978/ECi-CP_pmckcEPKlg8RB',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
     <meta content="Need a quick repair? Schedule your AC, fridge, or washing machine service in Nallasopara. Book our expert local technicians for fast doorstep fixing today." name="description">
 	
@@ -139,7 +157,7 @@
             </div>
 
             <!-- Emergency Section (Silver-Grey Background) -->
-            <a href="tel:+918828634628" class="mt-4 mt-lg-0 py-2 px-3 d-flex align-items-center" 
+            <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="mt-4 mt-lg-0 py-2 px-3 d-flex align-items-center"
                style="background-color: #A9A9A9; text-decoration: none; border-radius: 4px; display: inline-flex;"> <!-- Dark Silver -->
                 <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 35px; height: 35px; border-radius: 50%;">
                     <i class="fa fa-user" style="font-size: 18px; color: #666666;"></i>
@@ -323,8 +341,7 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-	<a href="tel:8828634628" class="floating-call-btn">
+    <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="floating-call-btn">
   <span class="call-icon">📞</span> Call Now
 </a>
 </body>

@@ -15,6 +15,25 @@
 </script>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Ac gas charging Vasai, Washing Machine Repair Virar, AC gas filing virar, Fridge Repair Nallasopara West,Best AC service in Vasai" name="keywords">
+	<!-- Event snippet for Click to call (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17590964978/ECi-CP_pmckcEPKlg8RB',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     
 
     <meta content="Professional AC & home appliance repairs by H A S Royal Cool Service in Nallasopara. Quality service, low rates, and expert technicians. Stay cool always" name="description">
@@ -140,7 +159,7 @@
             </div>
 
             <!-- Emergency Section (Silver-Grey Background) -->
-            <a href="tel:+918828634628" class="mt-4 mt-lg-0 py-2 px-3 d-flex align-items-center" 
+            <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="mt-4 mt-lg-0 py-2 px-3 d-flex align-items-center"
                style="background-color: #A9A9A9; text-decoration: none; border-radius: 4px; display: inline-flex;"> <!-- Dark Silver -->
                 <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 35px; height: 35px; border-radius: 50%;">
                     <i class="fa fa-user" style="font-size: 18px; color: #666666;"></i>
@@ -249,7 +268,7 @@
                 <p class="fw-medium text-primary"><i class="fa fa-check text-success me-3"></i> Immediate 24/7 emergency services</p>
 
                 <!-- Clickable Emergency Section -->
-                <a href="tel:+918828634628" class="d-flex align-items-center p-4 mt-5" 
+                 <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="d-flex align-items-center p-4 mt-5" 
                    style="background-color: #90EE90; border-radius: 8px; text-decoration: none; display: flex;">
                     
                     <!-- Icon -->
@@ -705,8 +724,7 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-	<a href="tel:8828634628" class="floating-call-btn">
+    <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="floating-call-btn">
   <span class="call-icon">📞</span> Call Now
 </a>
 </body>
