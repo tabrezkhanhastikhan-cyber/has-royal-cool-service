@@ -178,8 +178,103 @@ function gtag_report_conversion(url) {
     </nav>
 </div>
     <!-- Navbar End -->
+     <!-- Booking Form Section Start -->
+<div class="container position-relative px-3" style="margin-top: 2rem; z-index: 10; margin-bottom: 3rem;">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <div class="bg-white shadow-lg rounded-4 text-center p-4 p-md-5 border" style="border-color: #2E7D32 !important;">
+                <div class="mb-4">
+                    <!-- First Booking Offer Badge -->
+                    <div class="mb-3">
+                        <span class="badge text-white px-3 py-2 rounded-pill fw-bold text-uppercase shadow-sm" style="font-size: 0.85rem; background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%); letter-spacing: 0.5px;">
+                            🔥 First Booking pe ₹100 Off 🔥
+                        </span>
+                    </div>
 
-
+                    <span class="badge text-white px-3 py-2 rounded-pill fw-bold mb-2 text-uppercase" style="font-size: 0.8rem; background-color: #2E7D32;">⚡ Fast & Reliable Service</span>
+                    <h3 class="fw-bold mb-1" style="font-size: clamp(1.3rem, 2vw, 1.8rem); color: #1B5E20;">Book Expert Repair Service</h3>
+					<!-- Highlighted Line -->
+                    <div class="my-2 p-2 rounded-3" style="background-color: rgba(46, 125, 50, 0.1); border: 1px solid rgba(46, 125, 50, 0.4);">
+                        <small class="fw-bold text-uppercase" style="letter-spacing: 0.5px; color: #1B5E20;">
+                            <i class="fa fa-star me-1" style="color: #2E7D32;"></i> AC, Fridge & Washing Machine Expert
+                        </small>
+                    </div>
+                    <p class="text-muted small mb-0">Get doorstep inspection within 30 minutes in Vasai, Nalasopara & Virar !</p>
+                </div>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="46adc5a5-f942-4380-8cc3-22d4127ae8fc">
+                    <div class="row g-3 text-start">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control rounded-3 border-secondary border-opacity-25 shadow-none" name="name" id="name" placeholder="Your Name" required style="font-size: 0.95rem;">
+                                <label for="name" class="text-muted"><i class="fa fa-user me-2" style="color: #2E7D32;"></i>Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="tel" class="form-control rounded-3 border-secondary border-opacity-25 shadow-none" name="phone" id="phone" placeholder="Phone Number" required style="font-size: 0.95rem;">
+                                <label for="phone" class="text-muted"><i class="fa fa-phone me-2" style="color: #2E7D32;"></i>Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <select class="form-select rounded-3 border-secondary border-opacity-25 shadow-none" name="service" id="service" required style="font-size: 0.95rem;">
+                                    <option value="" disabled selected>Choose Required Service</option>
+                                    <option value="AC Service">AC Service</option>
+                                    <option value="AC Repair">AC Repair</option>
+                                    <option value="New Flat AC Copper Piping">New Flat AC Copper Piping</option>
+                                    <option value="AC Concealed Piping (In-Wall)">AC Concealed Piping (In-Wall)</option>
+                                    <option value="AC Installation">AC Installation</option>
+                                    <option value="AC Uninstallation">AC Uninstallation</option>
+                                    <option value="Inverter AC Repair & Service">Inverter AC Repair & Service</option>
+                                    <option value="AC Copper Piping / Leakage Fix">AC Copper Piping / Leakage Fix</option>
+                                    <option value="Split AC Jet Cleaning">Split AC Jet Cleaning</option>
+                                    <option value="Window AC Repair/Service">Window AC Repair/Service</option>
+                                    <option value="AC Gas Charging">AC Gas Charging</option>
+                                    <option value="Double Door Fridge Repair">Double Door Fridge Repair</option>
+                                    <option value="Fridge Gas Charging">Fridge Gas Charging</option>
+                                    <option value="Side-by-Side Refrigerator Repair">Side-by-Side Refrigerator Repair</option>
+                                    <option value="Single Door Fridge Repair">Single Door Fridge Repair</option>
+                                    <option value="Fridge Gas Refil">Fridge Gas Refil</option>
+                                    <option value="Fridge Repair">Fridge Repair</option>
+                                    <option value="Deep Freezer Repair">Deep Freezer Repair</option>
+                                    <option value="Coca-Cola Visicooler Repair">Coca-Cola / Bottle Cooler Repair</option>
+                                    <option value="Ice Cream Machine Repair">Ice Cream Machine Repair</option>
+                                    <option value="Commercial Freezer Gas Charging">Deep Freezer Gas Charging & Leakage Fix</option>
+                                    <option value="Freezer Compressor Replacement">Deep Freezer Compressor Change</option>
+                                    <option value="Freezer Thermostat/Sensor Repair">Freezer Digital Controller & Sensor Repair</option>
+                                    <option value="Washing Machine Repair">Washing Machine Repair</option>
+                                    <option value="Fully Automatic Repair">Fully Automatic Repair</option>
+                                    <option value="Semi-Automatic Repair">Semi-Automatic Repair</option>
+                                    <option value="Microwave Oven Repair">Microwave Oven Repair</option>
+                                    <option value="Microwave Touch/Button Repair">Microwave Touch/Button Repair</option>
+                                    <option value="Cassette AC Service">Cassette AC Jet Pump Service</option>
+                                    <option value="Cassette AC Water Leakage">Cassette AC Ceiling Water Leakage Fix</option>
+                                    <option value="Cassette AC PCB Repair">Cassette AC PCB Repair & Error Code Fix</option>
+                                    <option value="Cassette AC Gas Filling">Cassette AC Gas Leakage & Refilling</option>
+                                    <option value="Cassette AC Compressor Repair">Cassette AC Fan Motor & Compressor Repair</option>
+                                    <option value="Ductable AC Maintenance">Ductable AC Maintenance & Repair</option>
+                                    <option value="Centralized AC Air Duct Cleaning">Centralized AC Air Duct Cleaning</option>
+                                    <option value="Ductable AC Heavy Gas Filling">Ductable AC Gas Charging (R22/R410/R32)</option>
+                                    <option value="Ductable AC Compressor Replacement">Ductable AC Heavy Compressor Change</option>
+                                    <option value="Commercial AC AMC Booking">Commercial AC AMC (Annual Maintenance) Booking</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                                <label for="service" class="text-muted"><i class="fa fa-tools me-2" style="color: #2E7D32;"></i>Select Service</label>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button class="btn w-100 py-3 rounded-pill text-uppercase fw-bold shadow-sm" style="background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%); color: white; letter-spacing: 0.5px; border: none;" type="submit">
+                                <i class="fa fa-paper-plane me-2"></i> Book Instant Service Now
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Booking Form Section End -->
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 py-5">
         <div class="container">
@@ -196,13 +291,9 @@ function gtag_report_conversion(url) {
     <!-- Page Header End -->
 
 
-    <!-- Booking Start -->
+   <!-- Booking Start -->
     <div class="container-fluid px-0" style="margin: 6rem 0;">
         <div class="video wow fadeInUp" data-wow-delay="0.1s">
-       <!--     <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                <span></span>
-            </button>  -->
-
             <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content rounded-0">
@@ -227,70 +318,72 @@ function gtag_report_conversion(url) {
         <div class="container position-relative wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -6rem;">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="bg-light text-center p-5">
-                        <h2 class="mb-4">🚀Book Now🚀</h2>
+                    <div class="bg-light text-center p-5 border-top border-5 border-danger shadow">
+                        <h2 class="mb-4 text-danger fw-bold">🚀 Book Your Service Now 🚀</h2>
                 <form action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="46adc5a5-f942-4380-8cc3-22d4127ae8fc">
                         <div class="row g-3">
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                                    <input type="text" class="form-control border-danger" name="name" id="name" placeholder="Your Name" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
+                                    <input type="tel" class="form-control border-danger" name="phone" id="phone" placeholder="Phone Number" required>
                                     <label for="phone">Phone Number</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                  <div class="form-floating">
-    <select class="form-select" name="service" id="service" required>
-        <option value="" disabled selected>Choose Required Service</option>
-        <option value="AC Service">AC Service</option>
-        <option value="AC Repair">AC Repair</option>
-        <option value="New Flat AC Copper Piping">New Flat AC Copper Piping</option>
-        <option value="AC Concealed Piping (In-Wall)">AC Concealed Piping (In-Wall)</option>
-        <option value="AC Installation">AC Installation</option>
-        <option value="AC Uninstallation">AC Uninstallation</option>
-        <option value="Inverter AC Repair & Service">Inverter AC Repair & Service</option>
-        <option value="AC Copper Piping / Leakage Fix">AC Copper Piping / Leakage Fix</option>
-        <option value="Split AC Jet Cleaning">Split AC Jet Cleaning</option>
-        <option value="Window AC Repair/Service">Window AC Repair/Service</option>
-        <option value="AC Gas Charging">AC Gas Charging</option>
-        <option value="Double Door Fridge Repair">Double Door Fridge Repair</option>
-        <option value="Fridge Gas Charging">Fridge Gas Charging</option>
-        <option value="Side-by-Side Refrigerator Repair">Side-by-Side Refrigerator Repair</option>
-        <option value="Single Door Fridge Repair">Single Door Fridge Repair</option>
-        <option value="Fridge Gas Refil">Fridge Gas Refil</option>
-        <option value="Fridge Repair">Fridge Repair</option>
-		<option value="Deep Freezer Repair">Deep Freezer Repair</option>
-        <option value="Coca-Cola Visicooler Repair">Coca-Cola / Bottle Cooler Repair</option>
-        <option value="Ice Cream Machine Repair">Ice Cream Machine Repair</option>
-        <option value="Commercial Freezer Gas Charging"> Deep Freezer Gas Charging & Leakage Fix</option>
-        <option value="Freezer Compressor Replacement">Deep Freezer Compressor Change</option>
-        <option value="Freezer Thermostat/Sensor Repair">Freezer Digital Controller & Sensor Repair</option>
-        <option value="Washing Machine Repair">Washing Machine Repair</option>
-        <option value="Fully Automatic Repair">Fully Automatic Repair</option>
-        <option value="Semi-Automatic Repair">Semi-Automatic Repair</option>
-        <option value="Microwave Oven Repair">Microwave Oven Repair</option>
-        <option value="Microwave Touch/Button Repair">Microwave Touch/Button Repair</option>
-		<option value="Cassette AC Service">Cassette AC Jet Pump Service</option>
-        <option value="Cassette AC Water Leakage">Cassette AC Ceiling Water Leakage Fix</option>
-        <option value="Cassette AC PCB Repair">Cassette AC PCB Repair & Error Code Fix</option>
-        <option value="Cassette AC Gas Filling">Cassette AC Gas Leakage & Refilling</option>
-        <option value="Cassette AC Compressor Repair">Cassette AC Fan Motor & Compressor Repair</option>
-		<option value="Ductable AC Maintenance">Ductable AC Maintenance & Repair</option>
-        <option value="Centralized AC Air Duct Cleaning">Centralized AC Air Duct Cleaning</option>
-        <option value="Ductable AC Heavy Gas Filling">Ductable AC Gas Charging (R22/R410/R32)</option>
-        <option value="Ductable AC Compressor Replacement">Ductable AC Heavy Compressor Change</option>
-        <option value="Commercial AC AMC Booking">Commercial AC AMC (Annual Maintenance) Booking</option>
-        <option value="Others">Others</option>
-    </select>
-</div>
+                                <div class="form-floating">
+                                    <select class="form-select border-danger" name="service" id="service" required>
+                                        <option value="" disabled selected>Choose Required Service</option>
+                                        <option value="AC Service">AC Service</option>
+                                        <option value="AC Repair">AC Repair</option>
+                                        <option value="New Flat AC Copper Piping">New Flat AC Copper Piping</option>
+                                        <option value="AC Concealed Piping (In-Wall)">AC Concealed Piping (In-Wall)</option>
+                                        <option value="AC Installation">AC Installation</option>
+                                        <option value="AC Uninstallation">AC Uninstallation</option>
+                                        <option value="Inverter AC Repair & Service">Inverter AC Repair & Service</option>
+                                        <option value="AC Copper Piping / Leakage Fix">AC Copper Piping / Leakage Fix</option>
+                                        <option value="Split AC Jet Cleaning">Split AC Jet Cleaning</option>
+                                        <option value="Window AC Repair/Service">Window AC Repair/Service</option>
+                                        <option value="AC Gas Charging">AC Gas Charging</option>
+                                        <option value="Double Door Fridge Repair">Double Door Fridge Repair</option>
+                                        <option value="Fridge Gas Charging">Fridge Gas Charging</option>
+                                        <option value="Side-by-Side Refrigerator Repair">Side-by-Side Refrigerator Repair</option>
+                                        <option value="Single Door Fridge Repair">Single Door Fridge Repair</option>
+                                        <option value="Fridge Gas Refil">Fridge Gas Refil</option>
+                                        <option value="Fridge Repair">Fridge Repair</option>
+                                        <option value="Deep Freezer Repair">Deep Freezer Repair</option>
+                                        <option value="Coca-Cola Visicooler Repair">Coca-Cola / Bottle Cooler Repair</option>
+                                        <option value="Ice Cream Machine Repair">Ice Cream Machine Repair</option>
+                                        <option value="Commercial Freezer Gas Charging">Deep Freezer Gas Charging & Leakage Fix</option>
+                                        <option value="Freezer Compressor Replacement">Deep Freezer Compressor Change</option>
+                                        <option value="Freezer Thermostat/Sensor Repair">Freezer Digital Controller & Sensor Repair</option>
+                                        <option value="Washing Machine Repair">Washing Machine Repair</option>
+                                        <option value="Fully Automatic Repair">Fully Automatic Repair</option>
+                                        <option value="Semi-Automatic Repair">Semi-Automatic Repair</option>
+                                        <option value="Microwave Oven Repair">Microwave Oven Repair</option>
+                                        <option value="Microwave Touch/Button Repair">Microwave Touch/Button Repair</option>
+                                        <option value="Cassette AC Service">Cassette AC Jet Pump Service</option>
+                                        <option value="Cassette AC Water Leakage">Cassette AC Ceiling Water Leakage Fix</option>
+                                        <option value="Cassette AC PCB Repair">Cassette AC PCB Repair & Error Code Fix</option>
+                                        <option value="Cassette AC Gas Filling">Cassette AC Gas Leakage & Refilling</option>
+                                        <option value="Cassette AC Compressor Repair">Cassette AC Fan Motor & Compressor Repair</option>
+                                        <option value="Ductable AC Maintenance">Ductable AC Maintenance & Repair</option>
+                                        <option value="Centralized AC Air Duct Cleaning">Centralized AC Air Duct Cleaning</option>
+                                        <option value="Ductable AC Heavy Gas Filling">Ductable AC Gas Charging (R22/R410/R32)</option>
+                                        <option value="Ductable AC Compressor Replacement">Ductable AC Heavy Compressor Change</option>
+                                        <option value="Commercial AC AMC Booking">Commercial AC AMC (Annual Maintenance) Booking</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                    <label for="service">Select Service</label>
+                                </div>
+                            </div>
                             <div class="col-12 mt-3">
-                                <button class="btn w-100 py-3" style="background-color: #FF9800; color: white; font-weight: bold; border: none;" type="submit">Book Now</button>
+                                <button class="btn w-100 py-3 shadow-sm" style="background-color: #DC3545; color: white; font-weight: bold; border: none;" type="submit">BOOK INSTANT SERVICE</button>
                             </div>
                         </div>
                     </form>
@@ -299,8 +392,8 @@ function gtag_report_conversion(url) {
             </div>
         </div>
     </div>
-</div> 
-    <!-- Booking End -->
+</div>
+<!-- Booking End -->
         
 
     <!-- Footer Start -->
