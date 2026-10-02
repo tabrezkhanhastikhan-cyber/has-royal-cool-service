@@ -159,71 +159,373 @@ function gtag_report_conversion(url) {
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header mb-5 py-5">
-        <div class="container">
-            <h4 class="display-3 text-white mb-3 animated slideInDown">⚡Blog⚡</h4>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb text-uppercase">
-                    <li class="breadcrumb-item"><a class="text-white" href="booking.html">⚙️ Expert Tips</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="booking.html">💡 Smart Care</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">🔧 Tech Insights</li
-                </ol>
-            </nav>
-        </div>
+<div class="container-fluid page-header mb-5 py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #0b132b 0%, #1c2541 50%, #3a506b 100%); border-bottom: 3px solid #FFD700; box-shadow: inset 0 0 20px rgba(255, 215, 0, 0.2);">
+    <div class="container py-4 text-center text-md-start">
+        <h4 class="display-3 text-white mb-3 animated slideInDown fw-bold" style="letter-spacing: 0.5px; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">⚡ Blog & Tech Insights ⚡</h4>
+        <nav aria-label="breadcrumb animated slideInDown" class="d-inline-block px-4 py-2 rounded-pill border border-warning border-opacity-50 shadow-lg" style="background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px);">
+            <ol class="breadcrumb text-uppercase mb-0 align-items-center" style="font-size: 0.85rem; font-weight: 700;">
+                <li class="breadcrumb-item"><a class="text-white text-decoration-none d-flex align-items-center" href="booking.html"><span class="badge text-dark me-2 px-2 py-1" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); font-weight: bold;">⚙️️ Expert</span> Tips</a></li>
+                <li class="breadcrumb-item"><a class="text-white text-decoration-none d-flex align-items-center" href="booking.html"><span class="badge text-white me-2 px-2 py-1" style="background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); font-weight: bold;">💡 Smart</span> Care</a></li>
+                <li class="breadcrumb-item active d-flex align-items-center" aria-current="page" style="color: #FFD700;"><span class="badge text-dark me-2 px-2 py-1" style="background: linear-gradient(135deg, #e0e0e0 0%, #bdbdbd 100%); font-weight: bold;">🔧 Tech</span> Insights</li>
+            </ol>
+        </nav>
     </div>
-    <!-- Page Header End -->
+</div>
+<!-- Page Header End -->
 
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid w-100 h-100" src="img/service-1.jpg" alt="Fast and Reliable AC Repair Service in Nallasopara">
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
-                        <h5 class="text-truncate me-3 mb-0">Fast & Reliable Service🤝</h5>
-                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href="booking.html"><i class="fa fa-arrow-right"></i></a>
-                    </div>
+<!-- Service Highlights Start -->
+<div class="container-xxl py-4" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row g-4">
+            
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.1s">
+                <div class="overflow-hidden rounded-top shadow-sm bg-white">
+                    <img class="img-fluid w-100" src="img/service-1.jpg" alt="Fast and Reliable AC Repair Service in Nallasopara" style="height: 200px; object-fit: cover;">
                 </div>
-                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid w-100 h-100" src="img/service-2.jpg" alt="Affordable AC Repair and Service Charges">
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
-                        <h5 class="text-truncate me-3 mb-0">Affordable Pricing🤝</h5>
-                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href="booking.html"><i class="fa fa-arrow-right"></i></a>
-                    </div>
+                <div class="d-flex flex-column bg-white p-4 rounded-bottom shadow-sm border border-top-0 border-secondary border-opacity-10">
+                    <h5 class="text-dark fw-bold mb-3" style="font-size: 16px;">Fast & Reliable Service 🤝</h5>
+                    <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); font-size: 0.9rem; border: none;">
+                        <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                    </a>
                 </div>
-				<!-- start -->
-                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid w-100 h-100" src="img/service-3.jpg" alt="24/7 Emergency AC and Fridge Repair Service">
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
-                        <h5 class="text-truncate me-3 mb-0">Emergency Servicing🤝</h5>
-                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href="booking.html"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
-				<!-- end -->
-				<!-- start -->
-                <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid w-100 h-100" src="img/service-3.jpg" alt="Expert AC service">
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between bg-light p-4">
-                        <h5 class="text-truncate me-3 mb-0"> AC Servicing🤝</h5>
-                        <a class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0" href="booking.html"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
-				<!-- end -->
-				
-				
             </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.3s">
+                <div class="overflow-hidden rounded-top shadow-sm bg-white">
+                    <img class="img-fluid w-100" src="img/service-2.jpg" alt="Affordable AC Repair and Service Charges" style="height: 200px; object-fit: cover;">
+                </div>
+                <div class="d-flex flex-column bg-white p-4 rounded-bottom shadow-sm border border-top-0 border-secondary border-opacity-10">
+                    <h5 class="text-dark fw-bold mb-3" style="font-size: 16px;">Affordable Pricing 🤝</h5>
+                    <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #FF6600 0%, #E65100 100%); font-size: 0.9rem; border: none;">
+                        <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.5s">
+                <div class="overflow-hidden rounded-top shadow-sm bg-white">
+                    <img class="img-fluid w-100" src="img/service-3.jpg" alt="24/7 Emergency AC and Fridge Repair Service" style="height: 200px; object-fit: cover;">
+                </div>
+                <div class="d-flex flex-column bg-white p-4 rounded-bottom shadow-sm border border-top-0 border-secondary border-opacity-10">
+                    <h5 class="text-dark fw-bold mb-3" style="font-size: 16px;">Emergency Servicing 🤝</h5>
+                    <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #cb2d3e 0%, #ef473a 100%); font-size: 0.9rem; border: none;">
+                        <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.7s">
+                <div class="overflow-hidden rounded-top shadow-sm bg-white">
+                    <img class="img-fluid w-100" src="img/service-3.jpg" alt="Expert AC service" style="height: 200px; object-fit: cover;">
+                </div>
+                <div class="d-flex flex-column bg-white p-4 rounded-bottom shadow-sm border border-top-0 border-secondary border-opacity-10">
+                    <h5 class="text-dark fw-bold mb-3" style="font-size: 16px;">AC Servicing 🤝</h5>
+                    <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%); font-size: 0.9rem; border: none;">
+                        <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Service End -->
+</div>
+<!-- Service Highlights End -->
+
+
+<!-- Team Section Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4">
+            
+            <!-- Card 1: Green Button -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item bg-white rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10" style="transform: none !important; transition: none !important; overflow: visible !important; position: relative !important;">
+                    <div class="position-relative overflow-hidden rounded-top">
+                        <img class="img-fluid w-100" src="img/team-1.jpg" alt="Commercial Deep Freezer Repair Expert" style="height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="team-text p-3 text-center mt-auto rounded-bottom" style="overflow: visible !important; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);">
+                        <div class="mb-2">
+                            <h5 class="fw-bold mb-1 text-white" style="font-size: 0.95rem;">🧊 Deep Freezer Repair 🧊</h5>
+                            <small class="text-white-50 d-block fw-bold" style="font-size: 0.7rem; letter-spacing: 0.5px;">🧊 COMMERCIAL SERVICES 🧊</small>
+                        </div>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); font-size: 0.9rem; border: none; position: relative; z-index: 5;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Orange / Saffron Button -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item bg-white rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10" style="transform: none !important; transition: none !important; overflow: visible !important; position: relative !important;">
+                    <div class="position-relative overflow-hidden rounded-top">
+                        <img class="img-fluid w-100" src="img/team-2.jpg" alt="Affordable Fridge Repair Expert" style="height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="team-text p-3 text-center mt-auto rounded-bottom" style="overflow: visible !important; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);">
+                        <div class="mb-2">
+                            <h5 class="fw-bold mb-1 text-white" style="font-size: 0.95rem;">🔧 Affordable Rates 🔧</h5>
+                            <small class="text-white-50 d-block fw-bold" style="font-size: 0.7rem; letter-spacing: 0.5px;">🔧 FRIDGE REPAIR 🔧</small>
+                        </div>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #FF6600 0%, #E65100 100%); font-size: 0.9rem; border: none; position: relative; z-index: 5;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Deep Red / Crimson Button -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item bg-white rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10" style="transform: none !important; transition: none !important; overflow: visible !important; position: relative !important;">
+                    <div class="position-relative overflow-hidden rounded-top">
+                        <img class="img-fluid w-100" src="img/team-3.jpg" alt="AC Service Expert Mumbai" style="height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="team-text p-3 text-center mt-auto rounded-bottom" style="overflow: visible !important; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);">
+                        <div class="mb-2">
+                            <h5 class="fw-bold mb-1 text-white" style="font-size: 0.95rem;">🤝 AC Repair Expert 🤝</h5>
+                            <small class="text-white-50 d-block fw-bold" style="font-size: 0.7rem; letter-spacing: 0.5px;">🤝 AC GAS REFILLING 🤝</small>
+                        </div>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #cb2d3e 0%, #ef473a 100%); font-size: 0.9rem; border: none; position: relative; z-index: 5;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Dark Royal Blue Button -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item bg-white rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10" style="transform: none !important; transition: none !important; overflow: visible !important; position: relative !important;">
+                    <div class="position-relative overflow-hidden rounded-top">
+                        <img class="img-fluid w-100" src="img/team-4.jpg" alt="Washing Machine Repair Expert" style="height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="team-text p-3 text-center mt-auto rounded-bottom" style="overflow: visible !important; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);">
+                        <div class="mb-2">
+                            <h5 class="fw-bold mb-1 text-white" style="font-size: 0.95rem;">💎 Washing Machine 💎</h5>
+                            <small class="text-white-50 d-block fw-bold" style="font-size: 0.7rem; letter-spacing: 0.5px;">⌛ EMERGENCY AC VISIT ⌛</small>
+                        </div>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); font-size: 0.9rem; border: none; position: relative; z-index: 5;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Purple / Violet Button -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item bg-white rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10" style="transform: none !important; transition: none !important; overflow: visible !important; position: relative !important;">
+                    <div class="position-relative overflow-hidden rounded-top">
+                        <img class="img-fluid w-100" src="img/team-2.jpg" alt="Professional Fridge Repair" style="height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="team-text p-3 text-center mt-auto rounded-bottom" style="overflow: visible !important; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);">
+                        <div class="mb-2">
+                            <h5 class="fw-bold mb-1 text-white" style="font-size: 0.95rem;">🧊 Dead Fridge Repair 🧊</h5>
+                            <small class="text-white-50 d-block fw-bold" style="font-size: 0.7rem; letter-spacing: 0.5px;">✅ SAME DAY SERVICE ✅</small>
+                        </div>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%); font-size: 0.9rem; border: none; position: relative; z-index: 5;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Bright Yellow / Gold Button -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item bg-white rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10" style="transform: none !important; transition: none !important; overflow: visible !important; position: relative !important;">
+                    <div class="position-relative overflow-hidden rounded-top">
+                        <img class="img-fluid w-100" src="img/team-3.jpg" alt="AC Repair" style="height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="team-text p-3 text-center mt-auto rounded-bottom" style="overflow: visible !important; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);">
+                        <div class="mb-2">
+                            <h5 class="fw-bold mb-1 text-white" style="font-size: 0.95rem;">🛠️ AC Repair 🛠️</h5>
+                            <small class="text-white-50 d-block fw-bold" style="font-size: 0.7rem; letter-spacing: 0.5px;">✅ SAME DAY REPAIR ✅</small>
+                        </div>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-dark fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #F7971E 0%, #FFD200 100%); font-size: 0.9rem; border: none; position: relative; z-index: 5;">
+                            <i class="fa fa-phone-alt me-2 text-dark"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: Teal / Cyan Button -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item bg-white rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10" style="transform: none !important; transition: none !important; overflow: visible !important; position: relative !important;">
+                    <div class="position-relative overflow-hidden rounded-top">
+                        <img class="img-fluid w-100" src="img/team-4.jpg" alt="Washing Machine Service" style="height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="team-text p-3 text-center mt-auto rounded-bottom" style="overflow: visible !important; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);">
+                        <div class="mb-2">
+                            <h5 class="fw-bold mb-1 text-white" style="font-size: 0.95rem;">🌀 Quick Response 🌀</h5>
+                            <small class="text-white-50 d-block fw-bold" style="font-size: 0.7rem; letter-spacing: 0.5px;">🌀 WASHING MACHINE SERVICE 🌀</small>
+                        </div>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #005c97 0%, #363795 100%); font-size: 0.9rem; border: none; position: relative; z-index: 5;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8: Pink / Magenta Button -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item bg-white rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10" style="transform: none !important; transition: none !important; overflow: visible !important; position: relative !important;">
+                    <div class="position-relative overflow-hidden rounded-top">
+                        <img class="img-fluid w-100" src="img/team-1.jpg" alt="Deep Freezer Repair" style="height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="team-text p-3 text-center mt-auto rounded-bottom" style="overflow: visible !important; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);">
+                        <div class="mb-2">
+                            <h5 class="fw-bold mb-1 text-white" style="font-size: 0.95rem;">🛠️ Deep Freezer Repair 🧊</h5>
+                            <small class="text-white-50 d-block fw-bold" style="font-size: 0.7rem; letter-spacing: 0.5px;">🛠️ REPAIR & SERVICE 🛠️</small>
+                        </div>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%); font-size: 0.9rem; border: none; position: relative; z-index: 5;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Team Section End -->
+
+
+<!-- Attached Detailed Blog Content Cards Start -->
+<div class="container-xxl py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row g-4">
+            
+            <!-- Item 1: Fully Automatic Washing Machine -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="bg-light p-4 rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10">
+                    <div class="d-flex align-items-center justify-content-center mb-3"></div>    
+                    <h4 class="mb-3 text-dark fw-bold" style="font-size: 1.15rem;">💫 Fully Automatic Washing Machine</h4>
+                    <p class="text-secondary" style="font-size: 0.9rem;">Washing machine plays a critical role in maintaining comfort Service.</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>No Hidden Charges</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>Best Price in Market</p>
+                    <p class="text-primary fw-medium mb-3"><i class="fa fa-check text-success me-2"></i>Advanced Diagnostic</p>
+                    <div class="mt-auto">
+                        <a href="contact.html" class="btn bg-white text-primary w-100 mt-2 border text-start" style="font-size: 0.85rem;">Expert machine installation, servicing, repair, and parts replacement<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 mt-3 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); font-size: 0.95rem; border: none;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Microwave Oven Repair -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="bg-light p-4 rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10">
+                    <div class="d-flex align-items-center justify-content-center mb-3"></div>  
+                    <h4 class="mb-3 text-dark fw-bold" style="font-size: 1.15rem;">💫 Microwave Oven Repair</h4>
+                    <p class="text-secondary" style="font-size: 0.9rem;">Effortless Microwave Repair: Making Way for Your Kitchen Comfort.</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>3000+ Customers</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>Same Day Repair</p>
+                    <p class="text-primary fw-medium mb-3"><i class="fa fa-check text-success me-2"></i>Your Best Service</p>
+                    <div class="mt-auto">
+                        <a href="contact.html" class="btn bg-white text-primary w-100 mt-2 border text-start" style="font-size: 0.85rem;">Skilled technicians trained in the latest appliance technologies<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 mt-3 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #FF6600 0%, #E65100 100%); font-size: 0.95rem; border: none;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Ductable AC Repair -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="bg-light p-4 rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10">
+                    <div class="d-flex align-items-center justify-content-center mb-3"></div>    
+                    <h4 class="mb-3 text-dark fw-bold" style="font-size: 1.15rem;">💫 Ductable AC Repair</h4>
+                    <p class="text-secondary" style="font-size: 0.9rem;">Ductable AC plays a critical role in maintaining large scale cooling comfort.</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>No Hidden Charges</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>Best Price in Market</p>
+                    <p class="text-primary fw-medium mb-3"><i class="fa fa-check text-success me-2"></i>Advanced Diagnostic</p>
+                    <div class="mt-auto">
+                        <a href="contact.html" class="btn bg-white text-primary w-100 mt-2 border text-start" style="font-size: 0.85rem;">Expert ductable installation, air duct cleaning, repair, and parts replacement<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 mt-3 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); font-size: 0.95rem; border: none;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Expert Cassette AC Services -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="bg-light p-4 rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10">
+                    <div class="d-flex align-items-center justify-content-center mb-3"></div>    
+                    <h4 class="mb-3 text-dark fw-bold" style="font-size: 1.15rem;">💫 Expert Cassette AC Services</h4>
+                    <p class="text-secondary" style="font-size: 0.9rem;">Cassette AC plays a critical role in maintaining commercial cooling comfort.</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>No Hidden Charges</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>Best Price in Market</p>
+                    <p class="text-primary fw-medium mb-3"><i class="fa fa-check text-success me-2"></i>Advanced Diagnostic</p>
+                    <div class="mt-auto">
+                        <a href="contact.html" class="btn bg-white text-primary w-100 mt-2 border text-start" style="font-size: 0.85rem;">Expert cassette installation, jet pump servicing, repair, and parts replacement<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 mt-3 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #cb2d3e 0%, #ef473a 100%); font-size: 0.95rem; border: none;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Commercial Deep Freezer Repair -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                <div class="bg-light p-4 rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10">
+                    <div class="d-flex align-items-center justify-content-center mb-3"></div>    
+                    <h4 class="mb-3 text-dark fw-bold" style="font-size: 1.15rem;">💫 Commercial Deep Freezer Repair</h4>
+                    <p class="text-secondary" style="font-size: 0.9rem;">Deep freezer plays a critical role in maintaining commercial cooling comfort.</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>No Hidden Charges</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>Best Price in Market</p>
+                    <p class="text-primary fw-medium mb-3"><i class="fa fa-check text-success me-2"></i>Advanced Diagnostic</p>
+                    <div class="mt-auto">
+                        <a href="contact.html" class="btn bg-white text-primary w-100 mt-2 border text-start" style="font-size: 0.85rem;">Expert freezer installation, gas charging, repair, and parts replacement<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 mt-3 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%); font-size: 0.95rem; border: none;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6: AC Gas Charging and AC Installation (New Added) -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+                <div class="bg-light p-4 rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10">
+                    <div class="d-flex align-items-center justify-content-center mb-3"></div>  
+                    <h4 class="mb-3 text-dark fw-bold" style="font-size: 1.15rem;">💫 AC Gas Charging and AC Installation</h4>
+                    <p class="text-secondary" style="font-size: 0.9rem;">Expert AC installation and precise gas charging for maximum cooling efficiency</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>Quality Service</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>Expert Repairing</p>
+                    <p class="text-primary fw-medium mb-3"><i class="fa fa-check text-success me-2"></i>Support 24/7</p>
+                    <div class="mt-auto">
+                        <a href="contact.html" class="btn bg-white text-primary w-100 mt-2 border text-start" style="font-size: 0.85rem;">Prompt and dependable service with transparent pricing<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 mt-3 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); font-size: 0.95rem; border: none;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 7: Single and Double Door Fridge (New Added) -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.3s">
+                <div class="bg-light p-4 rounded shadow-sm h-100 d-flex flex-column border border-secondary border-opacity-10">
+                    <div class="d-flex align-items-center justify-content-center mb-3"></div>  
+                    <h4 class="mb-3 text-dark fw-bold" style="font-size: 1.15rem;">💫 Single and Double Door Fridge</h4>
+                    <p class="text-secondary" style="font-size: 0.9rem;">Professional repair, gas charging, and maintenance for all types of Single and Double Door Refrigerators</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>100% Guaranteed Work</p>
+                    <p class="text-primary fw-medium mb-2"><i class="fa fa-check text-success me-2"></i>Customer Satisfaction</p>
+                    <p class="text-primary fw-medium mb-3"><i class="fa fa-check text-success me-2"></i>Genuine Spare Parts</p>
+                    <div class="mt-auto">
+                        <a href="contact.html" class="btn bg-white text-primary w-100 mt-2 border text-start" style="font-size: 0.85rem;">Customer satisfaction and safety are our top priorities<i class="fa fa-arrow-right text-secondary ms-2"></i></a>
+                        <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn w-100 py-2 mt-3 rounded-pill text-white fw-bold shadow-sm d-flex align-items-center justify-content-center text-decoration-none" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); font-size: 0.95rem; border: none;">
+                            <i class="fa fa-phone-alt me-2 text-white"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Attached Detailed Blog Content Cards End -->
 
 
    
@@ -235,122 +537,127 @@ function gtag_report_conversion(url) {
         
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-           <center> <h4 class="text-light mb-4">📍Address📍</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Palghar, MAHARASHTRA - 401209</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+918828634628</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>tabrezkhanhastikhan@gmail.com</p>
-					</center>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="contact.html"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="contact.html"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="contact.html"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="contact.html"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">🕒Opening Hours🕒</h4>
-                    <h6 class="text-light">Monday - Sunday:</h6>
-                    <p class="mb-4">⏱️24/7 Service Available</p>
-                    <h6 class="text-light">ALL day:</h6>
-                    <p class="mb-0">⏱️Open 24 Hours (Call Anytime)</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">❄️Services❄️</h4>
-                    <a class="btn btn-link" href="contact.html">🛠️ALL AC REPAIR⚙️</a>
-                    <a class="btn btn-link" href="contact.html">🛠️DUCTABLE AC REPAIR⚙️</a>
-                    <a class="btn btn-link" href="contact.html">🛠️ALL REFRIGERATOR REPAIR</a>
-                    <a class="btn btn-link" href="contact.html">🛠️ALL WASHING MACHINE⚙️</a>
-                    <a class="btn btn-link" href="contact.html">🛠️ALL MICROWAVE REPAIR⚙️</a>
-					<a class="btn btn-link" href="contact.html">🛠️DEEP FREEZER REPAIR⚙️</a>
-                    <a class="btn btn-link" href="contact.html">🛠️CASSETTE AC SERVICE⚙️</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">🤝TRUSTED SERVICE</h4>
-                    <p>H A S Royal Cool Service.⭐⭐⭐⭐⭐</p>
-					<p>Expert Repair, Guaranteed Satisfaction.</p>
-					<p>Trusted Professionals, Same-Day Service.</p>
-                       <div class="position-relative mx-auto" style="max-width: 400px;">
-                <!--        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                       <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button> -->
-                    </div>
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6 text-center text-md-start">
+                <h4 class="text-light mb-4">📍 Address 📍</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3 text-warning"></i>Palghar, MAHARASHTRA - 401209</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3 text-warning"></i>+918828634628</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3 text-warning"></i>tabrezkhanhastikhan@gmail.com</p>
+                
+                <div class="d-flex pt-3 justify-content-center justify-content-md-start">
+                    <a class="btn btn-outline-light btn-social me-2 rounded-circle" href="contact.html"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social me-2 rounded-circle" href="contact.html"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social me-2 rounded-circle" href="contact.html"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social rounded-circle" href="contact.html"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">🕒 Opening Hours 🕒</h4>
+                <h6 class="text-light">Monday - Sunday:</h6>
+                <p class="mb-3 text-warning">⏱️ 24/7 Service Available</p>
+                <h6 class="text-light">Emergency Support:</h6>
+                <p class="mb-0 text-info">⏱️ Open 24 Hours (Call Anytime)</p>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">❄️ Services ❄️</h4>
+                <a class="btn btn-link text-decoration-none text-light-50" href="contact.html">🛠️ ALL AC REPAIR ⚙️</a>
+                <a class="btn btn-link text-decoration-none text-light-50" href="contact.html">🛠️ DUCTABLE AC REPAIR ⚙️</a>
+                <a class="btn btn-link text-decoration-none text-light-50" href="contact.html">🛠️ ALL REFRIGERATOR REPAIR</a>
+                <a class="btn btn-link text-decoration-none text-light-50" href="contact.html">🛠️ ALL WASHING MACHINE ⚙️️</a>
+                <a class="btn btn-link text-decoration-none text-light-50" href="contact.html">🛠️ ALL MICROWAVE REPAIR ⚙️</a>
+                <a class="btn btn-link text-decoration-none text-light-50" href="contact.html">🛠️ DEEP FREEZER REPAIR ⚙️</a>
+                <a class="btn btn-link text-decoration-none text-light-50" href="contact.html">🛠️ CASSETTE AC SERVICE ⚙️</a>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">🤝 TRUSTED SERVICE</h4>
+                <p class="fw-bold text-warning mb-2">H A S Royal Cool Service ⭐⭐⭐⭐⭐</p>
+                <p class="mb-2 small">Expert Repair, Guaranteed Satisfaction.</p>
+                <p class="mb-3 small">Trusted Professionals, Same-Day Service.</p>
+                
+                <!-- Professional Quick Call Badge inside Footer -->
+                <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="btn btn-sm btn-outline-warning rounded-pill px-3 py-2 fw-bold text-uppercase w-100 text-decoration-none">
+                    <i class="fa fa-phone-alt me-2"></i> Tap To Call Expert
+                </a>
+            </div>
         </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="contact.html">😊 H A S Royal Cool Service</a>💖2026
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                       <a class="border-bottom" href="privacy-policy.html">Privacy Policy</a>
-                    </div>
+    </div>
+    
+    <!-- Professional Divider & Copyright -->
+    <div class="container border-top border-secondary border-opacity-25 pt-4 pb-3">
+        <div class="copyright">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom text-warning text-decoration-none" href="#">H A S Royal Cool Service</a> 💖 2026. All Rights Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                   <a class="border-bottom text-light text-decoration-none" href="privacy-policy.html">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
-	<script src="js/main.js"></script>
-    <!-- ========================= CUTE INDIAN SUPPORT CALL BUTTON WITH GOOGLE ADS CONVERSION ========================= -->
+<!-- ========================= CUTE INDIAN SUPPORT CALL BUTTON WITH GOOGLE ADS CONVERSION ========================= -->
 <a href="tel:+918828634628" onclick="return gtag_report_conversion('tel:+918828634628');" class="support-call-btn" aria-label="Call Now">
   <div class="support-img-wrapper">
     <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&auto=format&fit=crop&q=80" alt="Cute Indian Support Executive">
   </div>
   <span class="call-now-badge">Call Now</span>
 </a>
-</body>
-<!--Whatsapp button Start-->
-      <script>
-            function whatsappcall(){
-                var url = "https://wa.me/918828634628";
-                window.open(url, '_blank').focus();
-            }
-        </script>
-        <div id="wa-widget-send-button" onClick="whatsappcall();" style="margin: 0 0 50px 0 !important;
-                padding-left: 10px;
-                padding-right: 10px;
-                position: fixed !important;
-                z-index: 112000160 !important;
-                bottom: 0 !important;
-                text-align: center !important;
-                height: 50px;
-                min-width: 50px;
-                border-radius: 100%;
-                visibility: visible;
-                transition: none !important;
-                background-color: #4dc247;
-                box-shadow: 2px 2px 6px rgb(0 0 0 / 40%);
-                right: 50px;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="wa-messenger-svg-whatsapp wh-svg-icon"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg>
-        <!--<div style="color: white; font-size: 18px"></div>-->
-        <!--Whatsapp button END-->
 
+<!-- Whatsapp button Start -->
+<script>
+    function whatsappcall(){
+        var url = "https://wa.me/918828634628";
+        window.open(url, '_blank').focus();
+    }
+</script>
+<div id="wa-widget-send-button" onClick="whatsappcall();" style="margin: 0 0 50px 0 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed !important;
+    z-index: 112000160 !important;
+    bottom: 0 !important;
+    text-align: center !important;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 100%;
+    visibility: visible;
+    transition: none !important;
+    background-color: #4dc247;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 40%);
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="wa-messenger-svg-whatsapp wh-svg-icon"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg>
+</div>
+<!-- Whatsapp button END -->
+
+</body>
 </html>
