@@ -13,7 +13,7 @@
     
     
     // Initiate the wowjs
-    new WOW().init();
+    if (typeof WOW !== 'undefined') { new WOW().init(); }
 
 
     // Sticky Navbar
@@ -54,6 +54,15 @@
     });
     
     
+    // Services link: on desktop a click goes to the Services page (hover opens the menu)
+    $('.nav-item.dropdown > .dropdown-toggle[href]').on('click', function () {
+        var href = $(this).attr('href');
+        if (window.matchMedia('(min-width: 992px)').matches && href && href !== '#') {
+            window.location.href = href;
+        }
+    });
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -69,19 +78,23 @@
 
 
     // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
+    if ($.fn.counterUp && $('[data-toggle="counter-up"]').length) {
+        $('[data-toggle="counter-up"]').counterUp({
+            delay: 10,
+            time: 2000
+        });
+    }
 
 
     // Date and time picker
-    $('.date').datetimepicker({
-        format: 'L'
-    });
-    $('.time').datetimepicker({
-        format: 'LT'
-    });
+    if ($.fn.datetimepicker) {
+        $('.date').datetimepicker({
+            format: 'L'
+        });
+        $('.time').datetimepicker({
+            format: 'LT'
+        });
+    }
 
 
     // Modal Video
@@ -90,7 +103,6 @@
         $('.btn-play').click(function () {
             $videoSrc = $(this).data("src");
         });
-        console.log($videoSrc);
 
         $('#videoModal').on('shown.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
@@ -103,7 +115,7 @@
 
 
     // Header carousel
-    $(".header-carousel").owlCarousel({
+    if ($.fn.owlCarousel) $(".header-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
         items: 1,
@@ -118,7 +130,7 @@
 
 
     // Service carousel
-    $(".service-carousel").owlCarousel({
+    if ($.fn.owlCarousel) $(".service-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
         center: true,
@@ -147,7 +159,7 @@
 
 
     // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
+    if ($.fn.owlCarousel) $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
         center: true,
@@ -173,3 +185,30 @@
     
 })(jQuery);
 
+
+/* Booking forms: send in background, then open the thank-you page of THIS site */
+(function () {
+    function init() {
+        document.querySelectorAll('form[action*="web3forms.com"]').forEach(function (f) {
+            f.addEventListener('submit', function (e) {
+                if (f.getAttribute('data-sending') || !window.fetch || !window.FormData) return;
+                e.preventDefault();
+                var btn = f.querySelector('button[type=submit]'), old = btn ? btn.innerHTML : '';
+                if (btn) { btn.disabled = true; btn.innerHTML = 'Sending...'; }
+                f.setAttribute('data-sending', '1');
+                fetch(f.action, { method: 'POST', body: new FormData(f), headers: { 'Accept': 'application/json' } })
+                    .then(function (r) { return r.json(); })
+                    .then(function (d) {
+                        if (d && d.success) { window.location.href = 'thankyou.html'; }
+                        else { throw new Error('send failed'); }
+                    })
+                    .catch(function () {
+                        f.removeAttribute('data-sending');
+                        if (btn) { btn.disabled = false; btn.innerHTML = old; }
+                        f.submit();
+                    });
+            });
+        });
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
